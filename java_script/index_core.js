@@ -3,7 +3,7 @@ const moneyCounter = document.querySelector('.money-counter');
 const footer = document.querySelector('.end');
 
 const xml = new XMLHttpRequest();
-xml.open('Get', 'render.json');
+xml.open('Get', '/render.json');
 xml.addEventListener('load', () => {
     const result = JSON.parse(xml.responseText);
     result.forEach((item) => {
@@ -26,6 +26,9 @@ xml.addEventListener('load', () => {
                         </div>`;
         mainContainer.insertAdjacentHTML('beforeend', example);
     });
+});
+xml.addEventListener('error', () => { 
+    console.log('Error 404');
 });
 xml.send();
 
