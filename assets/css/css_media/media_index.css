@@ -1,0 +1,72 @@
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .buttons .sell_btn, .buy_btn, .close {
+        padding: 15px 30px;
+    }
+    footer .end {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px){
+    .elon-container .name {
+        font-size: 40px;
+    }
+    .main-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .buttons .sell_btn, .buy_btn, .close {
+        padding: 15px 25px;
+    }
+    footer .end {
+        font-size: 25px;
+    }
+    .money-counter {
+        width: 450px;
+        height: 70px;
+        font-size: 35px;
+    }
+}
+  
+@media only screen and (min-width: 300px) and (max-width: 480px){
+    .money-counter {
+        width: 270px;
+        height: 70px;
+        font-size: 25px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    .elon-container .name {
+        font-size: 25px;
+    }
+    .main-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer .end {
+        font-size: 25px;
+    }
+    .buttons .sell_btn, .buy_btn, .close {
+        padding: 15px 40px;
+    }
+}
+
+@media only screen and (max-width: 299px) {
+    .money-counter {
+        width: 270px;
+        height: 70px;
+        font-size: 25px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    .elon-container .name {
+        font-size: 25px;
+    }
+    .main-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer .end {
+        font-size: 25px;
+    }
+    .buttons .sell_btn, .buy_btn, .close {
+        padding: 20px 40px;
+    }
+}
